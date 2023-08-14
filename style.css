@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:black;;
+}
+
+.container{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 5%;
+
+
+}
+
+
+
+.flag{
+    width: 80%;
+    height: auto ;
+    background:none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flag h1{
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.flag-saffron{
+
+    width: 30%;
+    height: auto ;
+    background:#FF9933;
+    padding: 30px;
+
+}
+
+.flag-white{
+    width: 30%;
+    height: auto ;
+    background:#FFFFFF;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.flag-green{
+    width: 30%;
+    height: auto ;
+    background:#138808;
+    padding: 30px;
+
+}
+
+
+.Ashoka_Chakra{
+    width: 55px;
+    position: relative;
+    top:-117px;
+    bottom: 10px;
+    animation:  rotater infinite;
+
+   
+}
+
+
+@media(max-width:1150px){
+    
+    .flag-green , .flag-white,.flag-saffron{
+        width:50%;
+        padding: 40px;
+
+    }
+
+    .Ashoka_Chakra{
+        top: -140px;
+    }
+}
+.wheel {
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+ 
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
