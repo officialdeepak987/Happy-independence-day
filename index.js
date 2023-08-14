@@ -1,3 +1,40 @@
+
+const textEdit=document.getElementById('auto-text');
+
+const text='India will celebrate its 77th Independence Day on 15 August 2023 !';
+
+textEdit.innerHTML=`${text}`;
+let index=0;
+const writeText=()=>{
+    textEdit.innerText=text.slice(0,index);
+    index++;
+    if(index>text.length-1){
+        index=0;
+    }
+}
+
+setInterval(writeText,200);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.requestAnimFrame = (function(){
     return  window.requestAnimationFrame       || 
             window.webkitRequestAnimationFrame || 

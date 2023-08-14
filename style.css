@@ -14,11 +14,15 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 5%;
+margin-top: 7%;
 
 
 }
 
+#auto-text{
+    color: #fff;
+    margin-bottom: 20px;
+}
 
 
 .flag{
